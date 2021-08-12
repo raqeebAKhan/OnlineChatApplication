@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "970243615857",
+    "project_id": "swiftchat-6750c",
+    "storage_bucket": "swiftchat-6750c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970243615857:android:ae1888fc5f62ad9f713fd0",
+        "android_client_info": {
+          "package_name": "com.chatapp.swiftchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970243615857-te4qbemi5fcikj5ob7ejihgerp98oaf3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chatapp.swiftchat",
+            "certificate_hash": "e16890589e303d6bb7bbb1d66ae8d8fd52b72f56"
+          }
+        },
+        {
+          "client_id": "970243615857-ffghuholvapovr9eiliuccm9c8829cbk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIHmvLTQkdHZEMSoTQoZKilS2JQYPXiAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970243615857-ffghuholvapovr9eiliuccm9c8829cbk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
