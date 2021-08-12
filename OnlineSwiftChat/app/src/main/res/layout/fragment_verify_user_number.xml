@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPurple"
+    tools:context=".fragments.VerifyUserNumberFragment">
+
+    <ImageView
+        android:id="@+id/imgVerifyNumber"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/swift_chat_logo" />
+
+    <TextView
+        android:id="@+id/txtNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgVerifyNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/enter_otp"
+        android:textColor="@color/purpleLight"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/verification_text"
+        android:textColor="@color/purpleLight"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/otp_text_view"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:cursorVisible="true"
+        android:hint="@string/_otp_number"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textColor="@color/purpleLight"
+        android:textColorHint="@color/purpleLight"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="@color/purpleLight"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="false"
+        app:itemCount="6"
+        app:itemHeight="48dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="0dp"
+        app:itemWidth="48dp"
+        app:lineColor="@color/purpleLight"
+        app:lineWidth="2dp"
+        app:viewType="rectangle" />
+
+    <Button
+        android:id="@+id/btnVerify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/login_button_style"
+        android:layout_margin="@dimen/dp_35"
+        android:layout_below="@+id/otp_text_view"
+        android:gravity="center"
+        android:background="@color/purpleLight"
+        android:text="@string/verify_otp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold" />
+</RelativeLayout>

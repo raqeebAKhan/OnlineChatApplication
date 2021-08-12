@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.GetUserDataFragment">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/backgroundPurple">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgUser"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_account_user"
+            app:civ_border_color="@color/purpleDark"
+            app:civ_border_width="2dp" />
+
+        <ImageView
+            android:id="@+id/imgPickImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="150dp"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+
+            android:src="@drawable/ic_camera_icon"
+            app:layout_anchor="@id/imgUser"
+            app:layout_anchorGravity="end|center" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="250dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="25dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableStart="@drawable/ic_account_user"
+                android:drawablePadding="@dimen/dp_10"
+                android:hint="@string/profile_name"
+                android:inputType="text|textCapSentences"
+                android:padding="10dp"
+                android:textColor="@color/purpleLight"
+                android:textColorHint="@color/purple_200"
+                android:textSize="@dimen/sp_15"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtUserStatus"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableStart="@drawable/ic_status"
+                android:drawablePadding="@dimen/dp_10"
+                android:inputType="text|textCapSentences"
+                android:padding="10dp"
+                android:text="@string/status_text"
+                android:textColor="@color/purpleLight"
+                android:textSize="@dimen/sp_15"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnDataDone"
+        style="@style/login_button_style"
+        android:layout_below="@+id/card"
+        android:layout_margin="@dimen/dp_30"
+        android:text="@string/done"
+        android:textSize="@dimen/sp_15"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

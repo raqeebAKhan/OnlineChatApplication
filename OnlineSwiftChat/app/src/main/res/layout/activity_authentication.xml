@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPurple"
+    tools:context=".activities.AuthenticationActivity">
+
+    <LinearLayout
+        android:id="@+id/llAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_50"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fugaz_one"
+            android:padding="@dimen/dp_20"
+            android:text="@string/swift_chat_name"
+            android:textColor="@color/purple_700"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivChatIcon"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:background="@drawable/ic_chat_icon"
+            android:backgroundTint="@color/purpleLight" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:layout_marginTop="@dimen/dp_15"
+        android:src="@drawable/swift_chat_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llAppName" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        style="@style/login_button_style"
+        android:layout_width="@dimen/dp_250"
+        android:backgroundTint="@color/purpleLight"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/login_button_style"
+        android:layout_width="@dimen/dp_250"
+        android:backgroundTint="@color/purpleLight"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSignup" />
+
+    <Button
+        android:id="@+id/btnOTP"
+        style="@style/login_button_style"
+        android:layout_width="@dimen/dp_250"
+        android:backgroundTint="@color/purpleLight"
+        android:text="@string/send_otp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
