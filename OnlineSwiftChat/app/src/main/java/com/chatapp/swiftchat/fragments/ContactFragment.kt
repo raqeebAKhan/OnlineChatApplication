@@ -10,16 +10,16 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.swiftchatapp.swiftchat.model.UserModel
+import com.chatapp.swiftchat.adapter.ContactAdapter
+import com.chatapp.swiftchat.constants.AppConstants
+import com.chatapp.swiftchat.databinding.FragmentContactBinding
+import com.chatapp.swiftchat.models.UserModel
+import com.chatapp.swiftchat.permission.AppPermission
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.swiftchatapp.swiftchat.adapter.ContactAdapter
-import com.swiftchatapp.swiftchat.constants.AppConstants
-import com.swiftchatapp.swiftchat.databinding.FragmentContactBinding
-import com.swiftchatapp.swiftchat.permission.AppPermission
 
 class ContactFragment : Fragment() {
 

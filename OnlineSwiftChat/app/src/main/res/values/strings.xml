@@ -29,7 +29,7 @@
     <string name="enter_your_number_for_verification">Enter your number for verification</string>
     <string name="generate_otp">Generate OTP</string>
     <string name="enter_otp">Enter OTP</string>
-    <string name="verification_text">We have sent you an OTP for \n verification phone number</string>
+    <string name="verification_text">We have sent you an OTP for \n verification of phone number</string>
     <string name="_otp_number">000000</string>
     <string name="verify_otp">Verify OTP</string>
     <string name="profile_name">Profile name</string>

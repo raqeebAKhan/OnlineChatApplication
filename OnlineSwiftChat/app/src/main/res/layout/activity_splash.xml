@@ -4,6 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_shade"
     tools:context=".activities.SplashActivity">
+
+    <LinearLayout
+        android:id="@+id/llAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_110"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fugaz_one"
+            android:padding="@dimen/dp_20"
+            android:text="@string/swift_chat_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_30"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivChatIcon"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:src="@drawable/ic_chat_icon" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:src="@drawable/swift_chat_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llAppName" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

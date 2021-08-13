@@ -1,11 +1,10 @@
-package com.swiftchatapp.swiftchat.activities
+package com.chatapp.swiftchat.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import androidx.appcompat.app.AppCompatActivity
-import com.chatapp.swiftchat.activities.LoginActivity
-import com.swiftchatapp.swiftchat.R
+import com.chatapp.swiftchat.R
 import com.chatapp.swiftchat.viewmodels.UserViewModel
 import com.chatapp.swiftchat.viewmodelfactory.UserViewModelFactory
 import kotlinx.android.synthetic.main.activity_signup.*

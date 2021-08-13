@@ -1,14 +1,14 @@
-package com.swiftchatapp.swiftchat.activities
+package com.chatapp.swiftchat.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.swiftchatapp.swiftchat.model.UserModel
+import com.chatapp.swiftchat.databinding.ActivityUserInfoBinding
+import com.chatapp.swiftchat.models.UserModel
+import com.chatapp.swiftchat.util.AppUtil
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.swiftchatapp.swiftchat.databinding.ActivityUserInfoBinding
-import com.swiftchatapp.swiftchat.util.AppUtil
 
 class UserInfoActivity : AppCompatActivity() {
     private lateinit var activityUserInfoBinding: ActivityUserInfoBinding

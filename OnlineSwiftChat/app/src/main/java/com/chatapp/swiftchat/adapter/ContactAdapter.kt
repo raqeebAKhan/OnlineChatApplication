@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.chatapp.swiftchat.activities.MessageActivity
 import com.chatapp.swiftchat.databinding.ContactItemLayoutBinding
 import com.chatapp.swiftchat.models.UserModel
-import com.swiftchatapp.swiftchat.activities.UserInfoActivity
+import com.chatapp.swiftchat.activities.UserInfoActivity
 import java.util.*
 import kotlin.collections.ArrayList
 

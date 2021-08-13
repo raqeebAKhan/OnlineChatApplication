@@ -14,6 +14,7 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.chatapp.swiftchat.R
+import com.chatapp.swiftchat.activities.MainActivity
 import com.chatapp.swiftchat.constants.AppConstants
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference

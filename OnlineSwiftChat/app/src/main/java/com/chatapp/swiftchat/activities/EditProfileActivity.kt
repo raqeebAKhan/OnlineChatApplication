@@ -1,11 +1,11 @@
-package com.swiftchatapp.swiftchat.activities
+package com.chatapp.swiftchat.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.swiftchatapp.swiftchat.databinding.ActivityEditProfileBinding
-import com.swiftchatapp.swiftchat.util.AppUtil
+import com.chatapp.swiftchat.databinding.ActivityEditProfileBinding
+import com.chatapp.swiftchat.util.AppUtil
 
 class EditProfileActivity : AppCompatActivity() {
     private lateinit var editNameBinding: ActivityEditProfileBinding

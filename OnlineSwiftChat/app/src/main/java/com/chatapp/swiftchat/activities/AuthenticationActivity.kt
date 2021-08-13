@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.chatapp.swiftchat.R
-import com.swiftchatapp.swiftchat.activities.SignUpActivity
 import kotlinx.android.synthetic.main.activity_authentication.*
 
 class AuthenticationActivity : AppCompatActivity() {

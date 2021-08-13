@@ -9,7 +9,6 @@ import androidx.lifecycle.Observer
 import com.chatapp.swiftchat.R
 import com.chatapp.swiftchat.viewmodels.LoginViewModel
 import com.chatapp.swiftchat.viewmodelfactory.LoginViewModelFactory
-import com.swiftchatapp.swiftchat.activities.SignUpActivity
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_signup.*
 import java.util.regex.Pattern
